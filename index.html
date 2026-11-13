@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DSH × 灵犀 · 部署通道自检</title>
+<style>
+  :root { color-scheme: light dark; }
+  * { box-sizing: border-box; }
+  body { margin: 0; min-height: 100vh; display: grid; place-items: center;
+         font: 15px/1.7 system-ui, -apple-system, "Segoe UI", "Microsoft YaHei", sans-serif;
+         background: radial-gradient(1200px 600px at 20% 0%, #e8f5ef, #f7faf9 60%, #eef2f1); color: #1c2b26; }
+  .card { width: min(680px, 92vw); background: #fff; border: 1px solid #dfe8e4; border-radius: 16px;
+          padding: 32px 34px; box-shadow: 0 12px 40px rgba(20,60,45,.08); }
+  h1 { margin: 0 0 6px; font-size: 22px; letter-spacing: .2px; }
+  .sub { color: #6b7d77; font-size: 13px; margin-bottom: 22px; }
+  .ok { display: inline-flex; align-items: center; gap: 6px; background: #e7f6ef; color: #127a55;
+        border: 1px solid #b9e3d1; border-radius: 999px; padding: 3px 12px; font-size: 12px; font-weight: 600; }
+  ol { padding-left: 20px; margin: 18px 0 20px; }
+  li { margin: 7px 0; }
+  code { background: #f2f5f4; border: 1px solid #e3ebe8; border-radius: 5px; padding: 1px 6px; font-size: 13px; }
+  .meta { display: flex; flex-wrap: wrap; gap: 18px; border-top: 1px solid #eef2f0; padding-top: 16px;
+          color: #6b7d77; font-size: 12.5px; }
+  .meta b { color: #1c2b26; font-weight: 600; }
+</style>
+</head>
+<body>
+  <main class="card">
+    <div class="ok">✅ 部署通道已打通</div>
+    <h1>DSH × 灵犀 · GitHub Pages 自检页</h1>
+    <div class="sub">这是一次链路验证：确认「本机推送 → GitHub Pages 上线」这条通道可用。</div>
+
+    <ol>
+      <li><b>写代码</b>：由灵犀（或任一 DSH 模型）产出页面内容</li>
+      <li><b>推送</b>：本机通过 GitHub Contents API 上传到仓库 <code>lingxi-site</code></li>
+      <li><b>上线</b>：自动开启 GitHub Pages，公网可访问</li>
+    </ol>
+
+    <div class="meta">
+      <span>部署时间：<b>2026/11/13 14:28:33</b></span>
+      <span>仓库：<b>chenbenkong/lingxi-site</b></span>
+      <span>通道：<b>GitHub Pages</b></span>
+    </div>
+  </main>
+</body>
+</html>
